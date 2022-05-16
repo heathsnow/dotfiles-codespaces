@@ -13,6 +13,17 @@ vim -u NONE -c "helptags $HOME/.vim/pack/plugins/start/NERD_tree/doc" -c -q
 git clone https://github.com/vim-airline/vim-airline.git $HOME/.vim/pack/plugins/start/vim-airline
 vim -u NONE -c "helptags $HOME/.vim/pack/plugins/start/vim-airline/doc" -c -q
 
+# vim hcl
+
+git clone git://github.com/jvirtanen/vim-hcl.git $HOME/.vim/pack/plugins/start/vim-hcl
+
+# vim configuration
+
+grep -q -F 'syntax on' $HOME/.vimrc || echo 'syntax on' >> $HOME/.vimrc
+grep -q -F 'set tabstop=2' $HOME/.vimrc || echo 'set tabstop=2' >> $HOME/.vimrc
+grep -q -F 'set shiftwidth=2' $HOME/.vimrc || echo 'set shiftwidth=2' >> $HOME/.vimrc
+grep -q -F 'set expandtab' $HOME/.vimrc || echo 'set expandtab' >> $HOME/.vimrc
+
 # aws-cli
 
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
