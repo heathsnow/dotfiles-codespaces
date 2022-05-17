@@ -19,7 +19,7 @@ git clone git://github.com/jvirtanen/vim-hcl.git $HOME/.vim/pack/plugins/start/v
 
 # vim configuration
 
-mkdir -p $HOME/.vimrc
+touch $HOME/.vimrc
 grep -q -F 'syntax on' $HOME/.vimrc || echo 'syntax on' >> $HOME/.vimrc
 grep -q -F 'set tabstop=2' $HOME/.vimrc || echo 'set tabstop=2' >> $HOME/.vimrc
 grep -q -F 'set shiftwidth=2' $HOME/.vimrc || echo 'set shiftwidth=2' >> $HOME/.vimrc
