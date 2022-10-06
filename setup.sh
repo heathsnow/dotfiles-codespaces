@@ -15,7 +15,7 @@ vim -u NONE -c "helptags $HOME/.vim/pack/plugins/start/vim-airline/doc" -c -q
 
 # vim hcl
 
-git clone git://github.com/jvirtanen/vim-hcl.git $HOME/.vim/pack/plugins/start/vim-hcl
+git clone https://github.com/jvirtanen/vim-hcl.git $HOME/.vim/pack/plugins/start/vim-hcl
 
 # vim configuration
 
